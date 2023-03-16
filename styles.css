@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: yellow;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+.choices {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    margin-top: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.playerImgs,
+.computerImgs {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border: solid black 5px;
+    max-height: 90px;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+.pImg:hover {
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+}
+
+.active {
+    width: 110px;
+    height: 110px;
+}
+
+.winner {
+    width: 100%;
+}
+
+.reset {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background-color: turquoise;
+    color: black;
+    font-size: x-large;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    cursor: pointer;
+}
+
+.winnerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
